@@ -3,26 +3,26 @@
   <Class Name="InheritanceExample.Building">
     <Position X="6" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAACIAAACAIEAwAAAIAAAAAACAAAAATAAA=</HashCode>
+      <HashCode>AAAgAAAAAAAACIAAACAIAAwAAAIAAAAAACAAAAATAAA=</HashCode>
       <FileName>Building.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InheritanceExample.Hospital">
-    <Position X="3.5" Y="1.75" Width="1.5" />
+    <Position X="4" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAAQAAAAIAAAAgAABEEAAAAAAAAAJAAAI=</HashCode>
+      <HashCode>AACAAAAAAAAAAQAAAAIAAAAgAABEEAAAAAAAAAIAAAA=</HashCode>
       <FileName>Hospital.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InheritanceExample.University">
-    <Position X="8.25" Y="1.75" Width="1.5" />
+    <Position X="8" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAgAQAAAAIAAAAkAAAAAAABAAAAAABCAAI=</HashCode>
+      <HashCode>AAAAAAAAAIAgAQAAAAIAAAAkAAAAAIABAAAAgAACAAA=</HashCode>
       <FileName>University.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="InheritanceExample.lightOnOff" Collapsed="true">
-    <Position X="6" Y="6" Width="1.5" />
+  <Enum Name="InheritanceExample.lightOnOff">
+    <Position X="6" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Building.cs</FileName>

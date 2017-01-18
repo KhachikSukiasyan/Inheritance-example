@@ -17,16 +17,15 @@ namespace InheritanceExample
         public string address;
         public int dateOfBuilding;
         public bool hasElevator;
-        int floorCount;
+        public lightOnOff switchLight { get; set; }
 
-        
-        int maxPeople;
+        protected int floorCount;
+        protected int maxPeople;
         protected int currentPeople;
 
 
-        public lightOnOff switchLight { get; set; }
 
-        public Building(string address, int maxPeopleCount):this(address,-1,-1,false,maxPeopleCount)
+        public Building(string address, int maxPeopleCount):this(address,DateTime.Now.Year,1,false,maxPeopleCount)
         {
             
         }
@@ -47,10 +46,10 @@ namespace InheritanceExample
             get { return floorCount; }
             set
             {
-                if (value > 0)
+                if (value > floorCount)
                     floorCount = value;
                 else
-                    Console.WriteLine("negative floor count");
+                    Console.WriteLine("Error:you set little or negative floor count");
             }
 
         }
@@ -60,10 +59,10 @@ namespace InheritanceExample
             get { return maxPeople; }
             set
             {
-                if (value > 100)
+                if (value > maxPeople)
                     maxPeople = value;
                 else
-                    Console.WriteLine("Very little count of people for Building");
+                    Console.WriteLine("You can't decrease the people count");
             }
 
         }
@@ -101,7 +100,7 @@ namespace InheritanceExample
         {
             if (currentPeople - count < 0)
             {
-                Console.WriteLine("This Building hasn't enough people");
+                Console.WriteLine("This Building hasn't enough people to delete");
                 return false;
             }
             else
