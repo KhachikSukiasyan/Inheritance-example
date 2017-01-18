@@ -14,11 +14,11 @@ namespace InheritanceExample
 
     abstract public class Building
     {
-        public string address;
-        public int dateOfBuilding;
         public bool hasElevator;
         public lightOnOff switchLight { get; set; }
 
+        protected string address { get; }
+        protected int dateOfBuilding { get; }
         protected int floorCount;
         protected int maxPeople;
         protected int currentPeople;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InheritanceExample
 {
-    class Hospital : Building
+    public class Hospital : Building
     {
         List<string> pacients = new List<string>();
         List<string> doctors = new List<string>();
@@ -17,12 +17,12 @@ namespace InheritanceExample
         {
         }
 
-        void AddDepartments(string[] names)
+        public void AddDepartments(string[] names)
         {
             departments.AddRange(names);
         }
 
-        void AddPacients(string[] names)
+        public void AddPacients(string[] names)
         {
             if (addPeople(names.Length))
             {
@@ -30,7 +30,7 @@ namespace InheritanceExample
             }
         }
 
-        void AddDoctors(string[] names)
+        public void AddDoctors(string[] names)
         {
             if (addPeople(names.Length))
             {
@@ -38,7 +38,7 @@ namespace InheritanceExample
             }
         }
 
-        void RemovePacients(string[] names)
+        public void RemovePacients(string[] names)
         {
             if (deletePeople(names.Length))
             {
@@ -49,7 +49,7 @@ namespace InheritanceExample
             }
         }
 
-        void RemoveDoctors(string[] names)
+        public void RemoveDoctors(string[] names)
         {
             if (deletePeople(names.Length))
                for (int i = 0; i < pacients.Count; i++)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InheritanceExample
 {
-    class University:Building
+    public class University:Building
     {
         List<string> lecturers = new List<string>();
         List<string> students = new List<string>();
