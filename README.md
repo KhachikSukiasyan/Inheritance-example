@@ -11,7 +11,7 @@ The third class is called `University`. It keeps information about `lecturers`,`
 Also there are functions for adding and removing lecturers,students and departments.
 
 
-![1](https://github.com/KhachikSukiasyan/Inheritance-example/blob/master/Screenshot.PNG)
+![1](https://github.com/KhachikSukiasyan/Inheritance-example/blob/master/Screenshot1.PNG)
 
 Example of using:
 ``` C#
